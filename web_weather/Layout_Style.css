@@ -1,0 +1,36 @@
+
+.navbar-default {
+    background-color: #24D1B7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.panel-default >.panel-heading {
+    background-color: #24D1B7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.darkBG {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    background: #999;
+
+
+}
+.darkerBG {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    background: #666;
+}
+.darkestBG {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    background: #333;
+}
+.container_data 
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+}

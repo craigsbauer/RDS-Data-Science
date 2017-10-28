@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout_Style_Humidity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Your file css -->
+    <link rel="stylesheet" href="Layout_Style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+    <body>
+     <!-- Nav Bar -->   
+        <header class="navbar" role="banner">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                          <!-- Brand and toggle get grouped for better mobile display -->
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href='Layout_Style.html'>Latitude</a>
+                          </div>
+                      
+                          <!-- Collect the nav links, forms, and other content for toggling -->
+                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                             
+                            <form class="navbar-form navbar-left">
+                              <div class="form-group">
+                              </div>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                              <li><a href='Layout_Style_Comparison.html'>Comparison</a></li>
+                              <li><a href='Layout_Style_Data.html'>Data</a></li>
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href='Layout_Style_Temp.html'>vs. Temperature</a></li>
+                                    <li><a href='Layout_Style_Humidity.html'>vs. Humidity</a></li>
+                                    <li><a href='Layout_Style_Cloud.html'>vs. Cloudiness</a></li>
+                                    <li><a href='Layout_Style_Wind.html'>vs. Wind Speed</a></li>
+                                  <li role="separator" class="divider"></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                      </nav>
+                </div>      
+        </header> 
+
+     <!-- CDN -->       
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-8">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">Summary: Latitude vs. Humidity</div>
+                        <div class="panel-body">
+                            
+                          As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered.
+                          <br>
+                          
+                          <br>
+                          <div class="row">
+                                <div class="col-xs-6 col-md-6">
+                                  <a href="#" class="thumbnail">
+                                        <img src="City_Latitude_vs_Humidity.png" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                        </div>  
+
+                        
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">Visualizations</div>
+                        <div class="panel-body">
+                                <div class="row">
+                                        <div class="col-md-6 first-column">
+                                            <a href='Layout_Style_Humidity.html' class="thumbnail">
+                                            <img src="City_Latitude_vs_Humidity.png" alt="">
+                                          </a>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6 first-column">
+                                          <a href='Layout_Style_Cloud.html' class="thumbnail">
+                                            <img src="City_Latitude_vs_Cloudiness.png" alt="">
+                                          </a>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6 second-column">
+                                          <a href='Layout_Style_Wind.html' class="thumbnail">
+                                            <img src="City_Latitude_vs_Wind_Speed.png" alt="">
+                                          </a>
+                                        </div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-md-6 second-column">
+                                            <a href='Layout_Style_Temp.html' class="thumbnail">
+                                                <img src="Latitude_vs_Max_Temp.png" alt="">
+                                              </a>
+                                            </div>        
+                                  
+            </div> 
+        </div>
+    </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </body>
+</html>
