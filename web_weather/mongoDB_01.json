@@ -1,0 +1,6 @@
+db.destinations.insert( {
+    "continent": "Africa", 
+    "country": "Morocco", 
+    "major_cities": ["Casablanca", "Fez", "Marrakech"] 
+    } 
+)
