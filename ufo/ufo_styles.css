@@ -1,0 +1,16 @@
+
+.navbar-default {
+  background-color: #373A3A;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: #2DEE01;
+}
+
+.navbar-header {
+  font: #2DEE01;
+  color: #0CD53A;
+}
+.form-control {
+  display: inline-block;
+  width: 100px;
+  margin-top: 0px;
+}

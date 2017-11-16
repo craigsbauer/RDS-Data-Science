@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sightings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="ufo_styles.css">
+  
+</head>
+
+<body>
+<!-- Start Header -->
+  <!-- Nav Bar -->   
+  <header class="navbar" role="banner">
+      <div class="container">
+          <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+
+                      <a class="navbar-brand" href='ufo_index.html'>UFO Sightings</a>
+                      </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                          <img src="alien-head-colored-eyes.png" width="40" height="48" alt="" />
+                    </div>
+                    </div><!-- /.navbar-collapse -->
+                  <!-- </div>/.container-fluid -->
+                </nav>
+          </div>      
+  </header> 
+
+
+<!-- Original -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" id="date/time" placeholder="date/time">
+          <input type="text" class="form-control" id="city" placeholder="city">          
+          <input type="text" class="form-control" id="state" placeholder="state">
+          <input type="text" class="form-control" id="country" placeholder="country">          
+          <input type="text" class="form-control" id="shape" placeholder="shape">          
+          
+          <a id="search" class="btn btn-success">Search</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>date/time</th>
+              <th>city</th>
+              <th>state</th>
+              <th>country</th>
+              <th>shape</th>
+              <th>duration</th>
+              <th>comment</th>              
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="ufo_data.js" type="text/javascript"></script> 
+  <script src="ufo_index.js" type="text/javascript"></script>
+
+  <ul class="pagination pagination-md">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+
+</body>
+
+</html>
