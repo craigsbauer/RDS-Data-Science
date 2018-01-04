@@ -1,0 +1,2849 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='census_asian' inline='true' name='federated.0hzz1e80j1ssei15y731k1nz9z5b' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='census_asian' name='textscan.1rr8yt21hyb4oq17uaehg0e6lhe5'>
+            <connection class='textscan' directory='C:/Users/craig/Desktop/PythonCode/python-challenge/international_schools/SQLite_to_CSV_Tables' filename='census_asian.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1rr8yt21hyb4oq17uaehg0e6lhe5' name='census_asian.csv' table='[census_asian#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CountyID' ordinal='0' />
+            <column datatype='string' name='CountyName' ordinal='1' />
+            <column datatype='integer' name='TotalPopulation' ordinal='2' />
+            <column datatype='integer' name='Lessthan10000' ordinal='3' />
+            <column datatype='integer' name='Lessthan14999' ordinal='4' />
+            <column datatype='integer' name='Lessthan19999' ordinal='5' />
+            <column datatype='integer' name='Lessthan24999' ordinal='6' />
+            <column datatype='integer' name='Lessthan29999' ordinal='7' />
+            <column datatype='integer' name='Lessthan34999' ordinal='8' />
+            <column datatype='integer' name='Lessthan39999' ordinal='9' />
+            <column datatype='integer' name='Lessthan44999' ordinal='10' />
+            <column datatype='integer' name='Lessthan49999' ordinal='11' />
+            <column datatype='integer' name='Lessthan59999' ordinal='12' />
+            <column datatype='integer' name='Lessthan74999' ordinal='13' />
+            <column datatype='integer' name='Lessthan99999' ordinal='14' />
+            <column datatype='integer' name='Lessthan124999' ordinal='15' />
+            <column datatype='integer' name='Lessthan149999' ordinal='16' />
+            <column datatype='integer' name='Over150000' ordinal='17' />
+            <column datatype='integer' name='Over200000' ordinal='18' />
+            <column datatype='integer' name='Year' ordinal='19' />
+            <column datatype='string' name='Race' ordinal='20' />
+            <column datatype='integer' name='ID' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='County ID' datatype='integer' name='[CountyID]' role='dimension' type='ordinal' />
+      <column caption='County Name' datatype='string' name='[CountyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Total Population' datatype='integer' name='[TotalPopulation]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.296248' measure-ordering='alphabetic' measure-percentage='0.703752' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='census_black+' inline='true' name='federated.0n225oa1jqggcr1c4ntm507t2ji2' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='census_black' name='textscan.1u5rw58037jn391gsrnsy18vnqra'>
+            <connection class='textscan' directory='C:/Users/craig/Desktop/PythonCode/python-challenge/international_schools/SQLite_to_CSV_Tables' filename='census_black.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[census_black.csv].[CountyID]' />
+              <expression op='[census_other.csv].[CountyID]' />
+            </expression>
+          </clause>
+          <relation join='full' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[census_black.csv].[CountyID]' />
+                <expression op='[census_mixed.csv].[CountyID]' />
+              </expression>
+            </clause>
+            <relation join='full' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[census_black.csv].[CountyID]' />
+                  <expression op='[census_white.csv].[CountyID]' />
+                </expression>
+              </clause>
+              <relation join='full' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[census_black.csv].[CountyID]' />
+                    <expression op='[census_asian.csv].[CountyID]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.1u5rw58037jn391gsrnsy18vnqra' name='census_black.csv' table='[census_black#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='CountyID' ordinal='0' />
+                    <column datatype='string' name='CountyName' ordinal='1' />
+                    <column datatype='integer' name='TotalPopulation' ordinal='2' />
+                    <column datatype='integer' name='Lessthan10000' ordinal='3' />
+                    <column datatype='integer' name='Lessthan14999' ordinal='4' />
+                    <column datatype='integer' name='Lessthan19999' ordinal='5' />
+                    <column datatype='integer' name='Lessthan24999' ordinal='6' />
+                    <column datatype='integer' name='Lessthan29999' ordinal='7' />
+                    <column datatype='integer' name='Lessthan34999' ordinal='8' />
+                    <column datatype='integer' name='Lessthan39999' ordinal='9' />
+                    <column datatype='integer' name='Lessthan44999' ordinal='10' />
+                    <column datatype='integer' name='Lessthan49999' ordinal='11' />
+                    <column datatype='integer' name='Lessthan59999' ordinal='12' />
+                    <column datatype='integer' name='Lessthan74999' ordinal='13' />
+                    <column datatype='integer' name='Lessthan99999' ordinal='14' />
+                    <column datatype='integer' name='Lessthan124999' ordinal='15' />
+                    <column datatype='integer' name='Lessthan149999' ordinal='16' />
+                    <column datatype='integer' name='Over150000' ordinal='17' />
+                    <column datatype='integer' name='Over200000' ordinal='18' />
+                    <column datatype='integer' name='Year' ordinal='19' />
+                    <column datatype='string' name='Race' ordinal='20' />
+                    <column datatype='integer' name='ID' ordinal='21' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1u5rw58037jn391gsrnsy18vnqra' name='census_asian.csv' table='[census_asian#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='CountyID' ordinal='0' />
+                    <column datatype='string' name='CountyName' ordinal='1' />
+                    <column datatype='integer' name='TotalPopulation' ordinal='2' />
+                    <column datatype='integer' name='Lessthan10000' ordinal='3' />
+                    <column datatype='integer' name='Lessthan14999' ordinal='4' />
+                    <column datatype='integer' name='Lessthan19999' ordinal='5' />
+                    <column datatype='integer' name='Lessthan24999' ordinal='6' />
+                    <column datatype='integer' name='Lessthan29999' ordinal='7' />
+                    <column datatype='integer' name='Lessthan34999' ordinal='8' />
+                    <column datatype='integer' name='Lessthan39999' ordinal='9' />
+                    <column datatype='integer' name='Lessthan44999' ordinal='10' />
+                    <column datatype='integer' name='Lessthan49999' ordinal='11' />
+                    <column datatype='integer' name='Lessthan59999' ordinal='12' />
+                    <column datatype='integer' name='Lessthan74999' ordinal='13' />
+                    <column datatype='integer' name='Lessthan99999' ordinal='14' />
+                    <column datatype='integer' name='Lessthan124999' ordinal='15' />
+                    <column datatype='integer' name='Lessthan149999' ordinal='16' />
+                    <column datatype='integer' name='Over150000' ordinal='17' />
+                    <column datatype='integer' name='Over200000' ordinal='18' />
+                    <column datatype='integer' name='Year' ordinal='19' />
+                    <column datatype='string' name='Race' ordinal='20' />
+                    <column datatype='integer' name='ID' ordinal='21' />
+                  </columns>
+                </relation>
+              </relation>
+              <relation connection='textscan.1u5rw58037jn391gsrnsy18vnqra' name='census_white.csv' table='[census_white#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CountyID' ordinal='0' />
+                  <column datatype='string' name='CountyName' ordinal='1' />
+                  <column datatype='integer' name='TotalPopulation' ordinal='2' />
+                  <column datatype='integer' name='Lessthan10000' ordinal='3' />
+                  <column datatype='integer' name='Lessthan14999' ordinal='4' />
+                  <column datatype='integer' name='Lessthan19999' ordinal='5' />
+                  <column datatype='integer' name='Lessthan24999' ordinal='6' />
+                  <column datatype='integer' name='Lessthan29999' ordinal='7' />
+                  <column datatype='integer' name='Lessthan34999' ordinal='8' />
+                  <column datatype='integer' name='Lessthan39999' ordinal='9' />
+                  <column datatype='integer' name='Lessthan44999' ordinal='10' />
+                  <column datatype='integer' name='Lessthan49999' ordinal='11' />
+                  <column datatype='integer' name='Lessthan59999' ordinal='12' />
+                  <column datatype='integer' name='Lessthan74999' ordinal='13' />
+                  <column datatype='integer' name='Lessthan99999' ordinal='14' />
+                  <column datatype='integer' name='Lessthan124999' ordinal='15' />
+                  <column datatype='integer' name='Lessthan149999' ordinal='16' />
+                  <column datatype='integer' name='Over150000' ordinal='17' />
+                  <column datatype='integer' name='Over200000' ordinal='18' />
+                  <column datatype='integer' name='Year' ordinal='19' />
+                  <column datatype='string' name='Race' ordinal='20' />
+                  <column datatype='integer' name='ID' ordinal='21' />
+                </columns>
+              </relation>
+            </relation>
+            <relation connection='textscan.1u5rw58037jn391gsrnsy18vnqra' name='census_mixed.csv' table='[census_mixed#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='CountyID' ordinal='0' />
+                <column datatype='string' name='CountyName' ordinal='1' />
+                <column datatype='integer' name='TotalPopulation' ordinal='2' />
+                <column datatype='integer' name='Lessthan10000' ordinal='3' />
+                <column datatype='integer' name='Lessthan14999' ordinal='4' />
+                <column datatype='integer' name='Lessthan19999' ordinal='5' />
+                <column datatype='integer' name='Lessthan24999' ordinal='6' />
+                <column datatype='integer' name='Lessthan29999' ordinal='7' />
+                <column datatype='integer' name='Lessthan34999' ordinal='8' />
+                <column datatype='integer' name='Lessthan39999' ordinal='9' />
+                <column datatype='integer' name='Lessthan44999' ordinal='10' />
+                <column datatype='integer' name='Lessthan49999' ordinal='11' />
+                <column datatype='integer' name='Lessthan59999' ordinal='12' />
+                <column datatype='integer' name='Lessthan74999' ordinal='13' />
+                <column datatype='integer' name='Lessthan99999' ordinal='14' />
+                <column datatype='integer' name='Lessthan124999' ordinal='15' />
+                <column datatype='integer' name='Lessthan149999' ordinal='16' />
+                <column datatype='integer' name='Over150000' ordinal='17' />
+                <column datatype='integer' name='Over200000' ordinal='18' />
+                <column datatype='integer' name='Year' ordinal='19' />
+                <column datatype='string' name='Race' ordinal='20' />
+                <column datatype='integer' name='ID' ordinal='21' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1u5rw58037jn391gsrnsy18vnqra' name='census_other.csv' table='[census_other#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='CountyID' ordinal='0' />
+              <column datatype='string' name='CountyName' ordinal='1' />
+              <column datatype='integer' name='TotalPopulation' ordinal='2' />
+              <column datatype='integer' name='Lessthan10000' ordinal='3' />
+              <column datatype='integer' name='Lessthan14999' ordinal='4' />
+              <column datatype='integer' name='Lessthan19999' ordinal='5' />
+              <column datatype='integer' name='Lessthan24999' ordinal='6' />
+              <column datatype='integer' name='Lessthan29999' ordinal='7' />
+              <column datatype='integer' name='Lessthan34999' ordinal='8' />
+              <column datatype='integer' name='Lessthan39999' ordinal='9' />
+              <column datatype='integer' name='Lessthan44999' ordinal='10' />
+              <column datatype='integer' name='Lessthan49999' ordinal='11' />
+              <column datatype='integer' name='Lessthan59999' ordinal='12' />
+              <column datatype='integer' name='Lessthan74999' ordinal='13' />
+              <column datatype='integer' name='Lessthan99999' ordinal='14' />
+              <column datatype='integer' name='Lessthan124999' ordinal='15' />
+              <column datatype='integer' name='Lessthan149999' ordinal='16' />
+              <column datatype='integer' name='Over150000' ordinal='17' />
+              <column datatype='integer' name='Over200000' ordinal='18' />
+              <column datatype='integer' name='Year' ordinal='19' />
+              <column datatype='string' name='Race' ordinal='20' />
+              <column datatype='integer' name='ID' ordinal='21' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[CountyID (census_asian.csv)]' value='[census_asian.csv].[CountyID]' />
+          <map key='[CountyID (census_mixed.csv)]' value='[census_mixed.csv].[CountyID]' />
+          <map key='[CountyID (census_other.csv)]' value='[census_other.csv].[CountyID]' />
+          <map key='[CountyID (census_white.csv)]' value='[census_white.csv].[CountyID]' />
+          <map key='[CountyID]' value='[census_black.csv].[CountyID]' />
+          <map key='[CountyName (census_asian.csv)]' value='[census_asian.csv].[CountyName]' />
+          <map key='[CountyName (census_mixed.csv)]' value='[census_mixed.csv].[CountyName]' />
+          <map key='[CountyName (census_other.csv)]' value='[census_other.csv].[CountyName]' />
+          <map key='[CountyName (census_white.csv)]' value='[census_white.csv].[CountyName]' />
+          <map key='[CountyName]' value='[census_black.csv].[CountyName]' />
+          <map key='[ID (census_asian.csv)]' value='[census_asian.csv].[ID]' />
+          <map key='[ID (census_mixed.csv)]' value='[census_mixed.csv].[ID]' />
+          <map key='[ID (census_other.csv)]' value='[census_other.csv].[ID]' />
+          <map key='[ID (census_white.csv)]' value='[census_white.csv].[ID]' />
+          <map key='[ID]' value='[census_black.csv].[ID]' />
+          <map key='[Lessthan10000 (census_asian.csv)]' value='[census_asian.csv].[Lessthan10000]' />
+          <map key='[Lessthan10000 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan10000]' />
+          <map key='[Lessthan10000 (census_other.csv)]' value='[census_other.csv].[Lessthan10000]' />
+          <map key='[Lessthan10000 (census_white.csv)]' value='[census_white.csv].[Lessthan10000]' />
+          <map key='[Lessthan10000]' value='[census_black.csv].[Lessthan10000]' />
+          <map key='[Lessthan124999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan124999]' />
+          <map key='[Lessthan124999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan124999]' />
+          <map key='[Lessthan124999 (census_other.csv)]' value='[census_other.csv].[Lessthan124999]' />
+          <map key='[Lessthan124999 (census_white.csv)]' value='[census_white.csv].[Lessthan124999]' />
+          <map key='[Lessthan124999]' value='[census_black.csv].[Lessthan124999]' />
+          <map key='[Lessthan14999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan14999]' />
+          <map key='[Lessthan14999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan14999]' />
+          <map key='[Lessthan14999 (census_other.csv)]' value='[census_other.csv].[Lessthan14999]' />
+          <map key='[Lessthan14999 (census_white.csv)]' value='[census_white.csv].[Lessthan14999]' />
+          <map key='[Lessthan149999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan149999]' />
+          <map key='[Lessthan149999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan149999]' />
+          <map key='[Lessthan149999 (census_other.csv)]' value='[census_other.csv].[Lessthan149999]' />
+          <map key='[Lessthan149999 (census_white.csv)]' value='[census_white.csv].[Lessthan149999]' />
+          <map key='[Lessthan149999]' value='[census_black.csv].[Lessthan149999]' />
+          <map key='[Lessthan14999]' value='[census_black.csv].[Lessthan14999]' />
+          <map key='[Lessthan19999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan19999]' />
+          <map key='[Lessthan19999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan19999]' />
+          <map key='[Lessthan19999 (census_other.csv)]' value='[census_other.csv].[Lessthan19999]' />
+          <map key='[Lessthan19999 (census_white.csv)]' value='[census_white.csv].[Lessthan19999]' />
+          <map key='[Lessthan19999]' value='[census_black.csv].[Lessthan19999]' />
+          <map key='[Lessthan24999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan24999]' />
+          <map key='[Lessthan24999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan24999]' />
+          <map key='[Lessthan24999 (census_other.csv)]' value='[census_other.csv].[Lessthan24999]' />
+          <map key='[Lessthan24999 (census_white.csv)]' value='[census_white.csv].[Lessthan24999]' />
+          <map key='[Lessthan24999]' value='[census_black.csv].[Lessthan24999]' />
+          <map key='[Lessthan29999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan29999]' />
+          <map key='[Lessthan29999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan29999]' />
+          <map key='[Lessthan29999 (census_other.csv)]' value='[census_other.csv].[Lessthan29999]' />
+          <map key='[Lessthan29999 (census_white.csv)]' value='[census_white.csv].[Lessthan29999]' />
+          <map key='[Lessthan29999]' value='[census_black.csv].[Lessthan29999]' />
+          <map key='[Lessthan34999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan34999]' />
+          <map key='[Lessthan34999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan34999]' />
+          <map key='[Lessthan34999 (census_other.csv)]' value='[census_other.csv].[Lessthan34999]' />
+          <map key='[Lessthan34999 (census_white.csv)]' value='[census_white.csv].[Lessthan34999]' />
+          <map key='[Lessthan34999]' value='[census_black.csv].[Lessthan34999]' />
+          <map key='[Lessthan39999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan39999]' />
+          <map key='[Lessthan39999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan39999]' />
+          <map key='[Lessthan39999 (census_other.csv)]' value='[census_other.csv].[Lessthan39999]' />
+          <map key='[Lessthan39999 (census_white.csv)]' value='[census_white.csv].[Lessthan39999]' />
+          <map key='[Lessthan39999]' value='[census_black.csv].[Lessthan39999]' />
+          <map key='[Lessthan44999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan44999]' />
+          <map key='[Lessthan44999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan44999]' />
+          <map key='[Lessthan44999 (census_other.csv)]' value='[census_other.csv].[Lessthan44999]' />
+          <map key='[Lessthan44999 (census_white.csv)]' value='[census_white.csv].[Lessthan44999]' />
+          <map key='[Lessthan44999]' value='[census_black.csv].[Lessthan44999]' />
+          <map key='[Lessthan49999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan49999]' />
+          <map key='[Lessthan49999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan49999]' />
+          <map key='[Lessthan49999 (census_other.csv)]' value='[census_other.csv].[Lessthan49999]' />
+          <map key='[Lessthan49999 (census_white.csv)]' value='[census_white.csv].[Lessthan49999]' />
+          <map key='[Lessthan49999]' value='[census_black.csv].[Lessthan49999]' />
+          <map key='[Lessthan59999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan59999]' />
+          <map key='[Lessthan59999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan59999]' />
+          <map key='[Lessthan59999 (census_other.csv)]' value='[census_other.csv].[Lessthan59999]' />
+          <map key='[Lessthan59999 (census_white.csv)]' value='[census_white.csv].[Lessthan59999]' />
+          <map key='[Lessthan59999]' value='[census_black.csv].[Lessthan59999]' />
+          <map key='[Lessthan74999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan74999]' />
+          <map key='[Lessthan74999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan74999]' />
+          <map key='[Lessthan74999 (census_other.csv)]' value='[census_other.csv].[Lessthan74999]' />
+          <map key='[Lessthan74999 (census_white.csv)]' value='[census_white.csv].[Lessthan74999]' />
+          <map key='[Lessthan74999]' value='[census_black.csv].[Lessthan74999]' />
+          <map key='[Lessthan99999 (census_asian.csv)]' value='[census_asian.csv].[Lessthan99999]' />
+          <map key='[Lessthan99999 (census_mixed.csv)]' value='[census_mixed.csv].[Lessthan99999]' />
+          <map key='[Lessthan99999 (census_other.csv)]' value='[census_other.csv].[Lessthan99999]' />
+          <map key='[Lessthan99999 (census_white.csv)]' value='[census_white.csv].[Lessthan99999]' />
+          <map key='[Lessthan99999]' value='[census_black.csv].[Lessthan99999]' />
+          <map key='[Over150000 (census_asian.csv)]' value='[census_asian.csv].[Over150000]' />
+          <map key='[Over150000 (census_mixed.csv)]' value='[census_mixed.csv].[Over150000]' />
+          <map key='[Over150000 (census_other.csv)]' value='[census_other.csv].[Over150000]' />
+          <map key='[Over150000 (census_white.csv)]' value='[census_white.csv].[Over150000]' />
+          <map key='[Over150000]' value='[census_black.csv].[Over150000]' />
+          <map key='[Over200000 (census_asian.csv)]' value='[census_asian.csv].[Over200000]' />
+          <map key='[Over200000 (census_mixed.csv)]' value='[census_mixed.csv].[Over200000]' />
+          <map key='[Over200000 (census_other.csv)]' value='[census_other.csv].[Over200000]' />
+          <map key='[Over200000 (census_white.csv)]' value='[census_white.csv].[Over200000]' />
+          <map key='[Over200000]' value='[census_black.csv].[Over200000]' />
+          <map key='[Race (census_asian.csv)]' value='[census_asian.csv].[Race]' />
+          <map key='[Race (census_mixed.csv)]' value='[census_mixed.csv].[Race]' />
+          <map key='[Race (census_other.csv)]' value='[census_other.csv].[Race]' />
+          <map key='[Race (census_white.csv)]' value='[census_white.csv].[Race]' />
+          <map key='[Race]' value='[census_black.csv].[Race]' />
+          <map key='[TotalPopulation (census_asian.csv)]' value='[census_asian.csv].[TotalPopulation]' />
+          <map key='[TotalPopulation (census_mixed.csv)]' value='[census_mixed.csv].[TotalPopulation]' />
+          <map key='[TotalPopulation (census_other.csv)]' value='[census_other.csv].[TotalPopulation]' />
+          <map key='[TotalPopulation (census_white.csv)]' value='[census_white.csv].[TotalPopulation]' />
+          <map key='[TotalPopulation]' value='[census_black.csv].[TotalPopulation]' />
+          <map key='[Year (census_asian.csv)]' value='[census_asian.csv].[Year]' />
+          <map key='[Year (census_mixed.csv)]' value='[census_mixed.csv].[Year]' />
+          <map key='[Year (census_other.csv)]' value='[census_other.csv].[Year]' />
+          <map key='[Year (census_white.csv)]' value='[census_white.csv].[Year]' />
+          <map key='[Year]' value='[census_black.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_black.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000 (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (census_asian.csv)]</local-name>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_asian.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000 (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (census_white.csv)]</local-name>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_white.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000 (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (census_mixed.csv)]</local-name>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_mixed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyID (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>CountyID</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan10000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan10000 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan10000</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan14999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan14999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan14999</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan19999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan19999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan19999</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan24999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan24999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan24999</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan29999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan29999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan29999</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan34999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan34999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan34999</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan39999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan39999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan39999</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan44999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan44999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan44999</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan49999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan49999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan49999</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan59999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan59999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan59999</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan74999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan74999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan74999</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan99999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan99999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan99999</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan124999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan124999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan124999</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lessthan149999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lessthan149999 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Lessthan149999</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over150000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over150000 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Over150000</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over200000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over200000 (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Over200000</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (census_other.csv)]</local-name>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[census_other.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CountyID (census asian.csv)' datatype='integer' name='[CountyID (census_asian.csv)]' role='dimension' type='ordinal' />
+      <column caption='CountyID (census mixed.csv)' datatype='integer' name='[CountyID (census_mixed.csv)]' role='dimension' type='ordinal' />
+      <column caption='CountyID (census other.csv)' datatype='integer' name='[CountyID (census_other.csv)]' role='dimension' type='ordinal' />
+      <column caption='CountyID (census white.csv)' datatype='integer' name='[CountyID (census_white.csv)]' role='dimension' type='ordinal' />
+      <column caption='County ID' datatype='integer' name='[CountyID]' role='dimension' type='ordinal' />
+      <column caption='CountyName (census asian.csv)' datatype='string' name='[CountyName (census_asian.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='CountyName (census mixed.csv)' datatype='string' name='[CountyName (census_mixed.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='CountyName (census other.csv)' datatype='string' name='[CountyName (census_other.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='CountyName (census white.csv)' datatype='string' name='[CountyName (census_white.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County Name' datatype='string' name='[CountyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='ID (census asian.csv)' datatype='integer' name='[ID (census_asian.csv)]' role='dimension' type='ordinal' />
+      <column caption='ID (census mixed.csv)' datatype='integer' name='[ID (census_mixed.csv)]' role='dimension' type='ordinal' />
+      <column caption='ID (census other.csv)' datatype='integer' name='[ID (census_other.csv)]' role='dimension' type='ordinal' />
+      <column caption='ID (census white.csv)' datatype='integer' name='[ID (census_white.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Lessthan10000 (census asian.csv)' datatype='integer' name='[Lessthan10000 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan10000 (census mixed.csv)' datatype='integer' name='[Lessthan10000 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan10000 (census other.csv)' datatype='integer' name='[Lessthan10000 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan10000 (census white.csv)' datatype='integer' name='[Lessthan10000 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan124999 (census asian.csv)' datatype='integer' name='[Lessthan124999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan124999 (census mixed.csv)' datatype='integer' name='[Lessthan124999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan124999 (census other.csv)' datatype='integer' name='[Lessthan124999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan124999 (census white.csv)' datatype='integer' name='[Lessthan124999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan14999 (census asian.csv)' datatype='integer' name='[Lessthan14999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan14999 (census mixed.csv)' datatype='integer' name='[Lessthan14999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan14999 (census other.csv)' datatype='integer' name='[Lessthan14999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan14999 (census white.csv)' datatype='integer' name='[Lessthan14999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan149999 (census asian.csv)' datatype='integer' name='[Lessthan149999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan149999 (census mixed.csv)' datatype='integer' name='[Lessthan149999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan149999 (census other.csv)' datatype='integer' name='[Lessthan149999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan149999 (census white.csv)' datatype='integer' name='[Lessthan149999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan19999 (census asian.csv)' datatype='integer' name='[Lessthan19999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan19999 (census mixed.csv)' datatype='integer' name='[Lessthan19999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan19999 (census other.csv)' datatype='integer' name='[Lessthan19999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan19999 (census white.csv)' datatype='integer' name='[Lessthan19999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan24999 (census asian.csv)' datatype='integer' name='[Lessthan24999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan24999 (census mixed.csv)' datatype='integer' name='[Lessthan24999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan24999 (census other.csv)' datatype='integer' name='[Lessthan24999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan24999 (census white.csv)' datatype='integer' name='[Lessthan24999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan29999 (census asian.csv)' datatype='integer' name='[Lessthan29999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan29999 (census mixed.csv)' datatype='integer' name='[Lessthan29999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan29999 (census other.csv)' datatype='integer' name='[Lessthan29999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan29999 (census white.csv)' datatype='integer' name='[Lessthan29999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan34999 (census asian.csv)' datatype='integer' name='[Lessthan34999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan34999 (census mixed.csv)' datatype='integer' name='[Lessthan34999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan34999 (census other.csv)' datatype='integer' name='[Lessthan34999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan34999 (census white.csv)' datatype='integer' name='[Lessthan34999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan39999 (census asian.csv)' datatype='integer' name='[Lessthan39999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan39999 (census mixed.csv)' datatype='integer' name='[Lessthan39999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan39999 (census other.csv)' datatype='integer' name='[Lessthan39999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan39999 (census white.csv)' datatype='integer' name='[Lessthan39999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan44999 (census asian.csv)' datatype='integer' name='[Lessthan44999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan44999 (census mixed.csv)' datatype='integer' name='[Lessthan44999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan44999 (census other.csv)' datatype='integer' name='[Lessthan44999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan44999 (census white.csv)' datatype='integer' name='[Lessthan44999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan49999 (census asian.csv)' datatype='integer' name='[Lessthan49999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan49999 (census mixed.csv)' datatype='integer' name='[Lessthan49999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan49999 (census other.csv)' datatype='integer' name='[Lessthan49999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan49999 (census white.csv)' datatype='integer' name='[Lessthan49999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan59999 (census asian.csv)' datatype='integer' name='[Lessthan59999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan59999 (census mixed.csv)' datatype='integer' name='[Lessthan59999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan59999 (census other.csv)' datatype='integer' name='[Lessthan59999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan59999 (census white.csv)' datatype='integer' name='[Lessthan59999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan74999 (census asian.csv)' datatype='integer' name='[Lessthan74999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan74999 (census mixed.csv)' datatype='integer' name='[Lessthan74999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan74999 (census other.csv)' datatype='integer' name='[Lessthan74999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan74999 (census white.csv)' datatype='integer' name='[Lessthan74999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan99999 (census asian.csv)' datatype='integer' name='[Lessthan99999 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan99999 (census mixed.csv)' datatype='integer' name='[Lessthan99999 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan99999 (census other.csv)' datatype='integer' name='[Lessthan99999 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Lessthan99999 (census white.csv)' datatype='integer' name='[Lessthan99999 (census_white.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Over150000 (census asian.csv)' datatype='integer' name='[Over150000 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Over150000 (census mixed.csv)' datatype='integer' name='[Over150000 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Over150000 (census other.csv)' datatype='integer' name='[Over150000 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Over150000 (census white.csv)' datatype='integer' name='[Over150000 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Over200000 (census asian.csv)' datatype='integer' name='[Over200000 (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='Over200000 (census mixed.csv)' datatype='integer' name='[Over200000 (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='Over200000 (census other.csv)' datatype='integer' name='[Over200000 (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='Over200000 (census white.csv)' datatype='integer' name='[Over200000 (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Race (census asian.csv)' datatype='string' name='[Race (census_asian.csv)]' role='dimension' type='nominal' />
+      <column caption='Race (census mixed.csv)' datatype='string' name='[Race (census_mixed.csv)]' role='dimension' type='nominal' />
+      <column caption='Race (census other.csv)' datatype='string' name='[Race (census_other.csv)]' role='dimension' type='nominal' />
+      <column caption='Race (census white.csv)' datatype='string' name='[Race (census_white.csv)]' role='dimension' type='nominal' />
+      <column caption='TotalPopulation (census asian.csv)' datatype='integer' name='[TotalPopulation (census_asian.csv)]' role='measure' type='quantitative' />
+      <column caption='TotalPopulation (census mixed.csv)' datatype='integer' name='[TotalPopulation (census_mixed.csv)]' role='measure' type='quantitative' />
+      <column caption='TotalPopulation (census other.csv)' datatype='integer' name='[TotalPopulation (census_other.csv)]' role='measure' type='quantitative' />
+      <column caption='TotalPopulation (census white.csv)' datatype='integer' name='[TotalPopulation (census_white.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Population' datatype='integer' name='[TotalPopulation]' role='measure' type='quantitative' />
+      <column caption='Year (census asian.csv)' datatype='integer' name='[Year (census_asian.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year (census mixed.csv)' datatype='integer' name='[Year (census_mixed.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year (census other.csv)' datatype='integer' name='[Year (census_other.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year (census white.csv)' datatype='integer' name='[Year (census_white.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.510996' measure-ordering='alphabetic' measure-percentage='0.489004' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='census_black+' name='federated.0n225oa1jqggcr1c4ntm507t2ji2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n225oa1jqggcr1c4ntm507t2ji2'>
+            <column caption='Over200000 (census asian.csv)' datatype='integer' name='[Over200000 (census_asian.csv)]' role='measure' type='quantitative' />
+            <column caption='Over200000 (census mixed.csv)' datatype='integer' name='[Over200000 (census_mixed.csv)]' role='measure' type='quantitative' />
+            <column caption='Over200000 (census other.csv)' datatype='integer' name='[Over200000 (census_other.csv)]' role='measure' type='quantitative' />
+            <column caption='Over200000 (census white.csv)' datatype='integer' name='[Over200000 (census_white.csv)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Over200000]' role='measure' type='quantitative' />
+            <column-instance column='[Over200000 (census_asian.csv)]' derivation='Sum' name='[sum:Over200000 (census_asian.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Over200000 (census_mixed.csv)]' derivation='Sum' name='[sum:Over200000 (census_mixed.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Over200000 (census_other.csv)]' derivation='Sum' name='[sum:Over200000 (census_other.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Over200000 (census_white.csv)]' derivation='Sum' name='[sum:Over200000 (census_white.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Over200000]' derivation='Sum' name='[sum:Over200000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_asian.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_mixed.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_other.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_white.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_asian.csv):qk] + ([federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_mixed.csv):qk] + ([federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_other.csv):qk] + ([federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000 (census_white.csv):qk] + [federated.0n225oa1jqggcr1c4ntm507t2ji2].[sum:Over200000:qk]))))</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='148'>
+      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
+      oKAQ/w8TEA/1KJPVGQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

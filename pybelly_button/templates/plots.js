@@ -20,7 +20,7 @@ function init(initsample){
   }];
   
   var layout = {
-    height: 600,
+'/names'    height: 600,
     width: 800
   };
 

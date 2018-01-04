@@ -1,0 +1,71 @@
+(PythonData)
+craig@DESKTOP-G3OS8VV MINGW64 ~/Desktop/PythonCode/python-challenge/pybelly_button (master)
+$ py /c/Users/craig/Desktop/PythonCode/python-challenge/pybelly_button/app.py
+Traceback (most recent call last):
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 2147, in _wrap_pool_con                                        nect
+    return fn()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 328, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 766, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 516, in checkout
+    rec = pool._do_get()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 1229, in _do_get
+    return self._create_connection()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 333, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 461, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 651, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\strategies.py", line 105, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 393, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:/Users/craig/Desktop/PythonCode/python-challenge/pybelly_button/app.py", line 33, in <module>
+    Base.prepare(engine, reflect=True)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\ext\automap.py", line 753, in prepare
+    autoload_replace=False
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\sql\schema.py", line 3791, in reflect
+    with bind.connect() as conn:
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 2091, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 90, in __init__
+    if connection is not None else engine.raw_connection()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 2177, in raw_connection
+    self.pool.unique_connection, _connection)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 2151, in _wrap_pool_con                                        nect
+    e, dialect, self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1465, in _handle_dbapi_                                        exception_noconnection
+    exc_info
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_caus                                        e
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 2147, in _wrap_pool_con                                        nect
+    return fn()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 328, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 766, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 516, in checkout
+    rec = pool._do_get()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 1229, in _do_get
+    return self._create_connection()
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 333, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 461, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\pool.py", line 651, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\strategies.py", line 105, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\craig\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 393, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(PythonData)

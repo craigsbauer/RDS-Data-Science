@@ -1,0 +1,109 @@
+
+html,body{
+	height:100%;
+}
+
+body{
+	padding-top:50px; /*padding for navbar*/
+}
+
+.navbar-custom .icon-bar {
+background-color:#fff;
+}
+
+.navbar-custom {
+background-color: #4C4E4F;
+	color:#fff;
+}
+
+.navbar-custom li>a:hover,.navbar-custom li>a:focus {
+background-color:#636465;
+}
+
+.navbar-custom a{
+	color:#fefefe;
+}
+
+.navbar-custom .form-control:focus {
+border-color: #414344;
+outline: 0;
+-webkit-box-shadow: inset 0 0 0;
+box-shadow: inset 0 0 0;
+}
+
+#main, #main>.row {
+height:100%;
+padding-right: 20px;
+}
+
+#main>.row {
+	overflow-y:scroll;
+}
+
+.px-2 {
+	padding-left: ($spacer-x * .5);
+	padding-right: ($spacer-x * .5);
+}
+
+#left {
+height:100%;
+}
+
+#map-canvas { 
+width:100%;
+	height:calc(100% - 0);
+	position:absolute;
+	right:16px;
+	top:50px;
+	bottom:0;
+	overflow:hidden;
+}
+
+
+
+
+
+
+.earthquake {
+  stroke: #333;
+  opacity: 0.75;
+}
+
+.legend-mag-text {
+  font-size: 9px;
+  fill: black;
+  font-weight: bold;
+}
+
+.legend-box {
+  stroke-width: 2px;
+  stroke: rgb(154, 151, 151);;
+  fill: white;
+  rx: 5;
+  ry: 5; 
+}
+
+svg {
+  position: relative;
+/* un-comment the selector below to see the borders of the svg overlays */
+/* border: 1px dotted black; */
+}
+
+/* tooltip style grabbed from leaflet.css:  .leaflet-tooltip style for consistency */
+div.tooltip {	
+	position: absolute;
+    text-align: center;			
+	padding: 6px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #222;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
