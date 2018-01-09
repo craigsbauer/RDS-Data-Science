@@ -1,20 +1,36 @@
-.tooltip {
-  position: absolute;
-  width: 135px;
-  height: 60px;
-  padding: 2px;
-  padding-top: 8px;
-  font: 12px sans-serif;
-  color: #E5E5EF;
-  text-align: center;
-  background: #2408E8;
-  border: 0;
-  border-radius: 10px;
+title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px
 }
 
-.axisText {
-  font-family: sans-serif;
-  font-weight: bold;
-  fill: #0B001B;
-  text-anchor: middle;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 960px;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #4CB446;
+  fill-opacity: .9;
+}
+
+.bar:hover {
+  fill: #5A96CC;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
